@@ -26,3 +26,19 @@ Route::get('/logshow',[LoginController::class, 'show']);
 Route::post('/update',[LoginController::class,'update']);
 Route::post('/edit',[LoginController::class,'edit']);
 Route::post('/delete',[LoginController::class,'delete']);
+
+
+
+
+
+Route::get('/home', function () {
+    return view('index');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
