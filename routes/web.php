@@ -22,3 +22,7 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/store', [LoginController::class, 'store']);
+Route::get('/logshow',[LoginController::class, 'show']);
+Route::post('/update',[LoginController::class,'update']);
+Route::post('/edit',[LoginController::class,'edit']);
+Route::post('/delete',[LoginController::class,'delete']);
