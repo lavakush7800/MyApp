@@ -23,6 +23,7 @@ class LoginController extends Controller
      $data=$request->all();
 
      $data = Model::create($data);
+     return redirect('home');
      
     }
 
