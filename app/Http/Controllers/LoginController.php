@@ -19,6 +19,11 @@ class LoginController extends Controller
      ///////////////insert
 
     public function store(Request $request) {
+      $validatedData = $request->validate([
+        'name' => 'required',
+        'email' => 'required',
+        'password' => 'required',
+    ]);
   
      $data=$request->all();
 
